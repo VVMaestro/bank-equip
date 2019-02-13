@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-roman.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-medium.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helveticaneuecyr-light.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-light.woff') format('woff');
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: @page-width;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
