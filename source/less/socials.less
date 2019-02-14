@@ -1,0 +1,39 @@
+.socials {
+    display: flex;
+    align-items: flex-start;
+}
+
+.socials__item {
+    margin-right: 7px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    &--gt a {
+        background-image: url(../img/GT.png);
+    }
+    &--gl a {
+        background-image: url(../img/google-plus.png);
+    }
+    &--fb a {
+        background-image: url(../img/facebook-logo.png);
+    }
+    &--tw a {
+        background-image: url(../img/twitter-logo.png);
+    }
+}
+
+.socials__item a {
+    display: block;    
+
+    width: 18px;
+    height: 18px;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+    background-color: #72777d;
+    background-repeat: no-repeat;
+    background-position: center;     
+}
