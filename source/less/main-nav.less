@@ -2,6 +2,12 @@
     border-bottom: 1px solid #c8cccf;
 }
 
+.main-nav--footer {
+    position: relative;
+    border: none;
+    background-color: @light-grey;
+}
+
 .main-nav__colums {
     display: flex;
     justify-content: space-between;
@@ -123,4 +129,9 @@
     &:hover, &:focus {
         color: @red;
     }
+}
+
+.main-nav__up-button {
+    top: calc(-53px/2);
+    left: calc(50% - 53px/2);
 }
