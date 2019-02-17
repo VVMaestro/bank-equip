@@ -8,37 +8,40 @@
 
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-image: linear-gradient(171deg, transparent 70%, #ffffff 70.3%);
     outline: none;
+
+    transition: background-color 0.1s ease-in 0s;
 
     &:last-child {
         margin-right: 0;
     }
 
     &--orange {
-        background-image: linear-gradient(171deg, #fbb569 70%, transparent 70.3%);
+        background-color: #fbb569;        
     }
 
     &--orange:hover,
     &--orange:focus {
-        background-image: linear-gradient(171deg, #fba648 70%, transparent 70.3%);        
+        background-color: #fba648;                
     }
 
     &--green {
-        background-image: linear-gradient(171deg, #85d2d2 70%, transparent 70.3%);
+        background-color: #85d2d2;
     }
 
     &--green:hover,
     &--green:focus {
-        background-image: linear-gradient(171deg, #6ac8c8 70%, transparent 70.3%);
+        background-color: #6ac8c8;
     }
 
     &--blue {
-        background-image: linear-gradient(171deg, #85c7ea 70%, transparent 70.3%);
+        background-color: #85c7ea;
     }
 
     &--blue:hover,
     &--blue:focus {
-        background-image: linear-gradient(171deg, #7bbbe6 70%, transparent 70.3%);
+        background-color: #7bbbe6;        
     }
 }
 
