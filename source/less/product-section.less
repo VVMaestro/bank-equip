@@ -2,7 +2,8 @@
     display: block;
     position: relative;
 
-    margin-right: 33px;
+    margin-right: auto;
+    margin-left: auto;
     width: 315px;
     height: 315px;
 
@@ -13,9 +14,9 @@
 
     transition: background-color 0.1s ease-in 0s;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
 
     &--orange {
         background-color: #fbb569;        
@@ -46,8 +47,8 @@
 }
 
 .product-section__wrapper {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 }
 
 .product-section__back {
@@ -86,8 +87,10 @@
 }
 
 .product-section__image {
-    display: block;
-    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+
+    padding: 35px 5px 0 5px;
 }
 
 .product-section__title {
