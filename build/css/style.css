@@ -34,6 +34,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -265,6 +269,7 @@ img {
 }
 .breadcrums {
   margin: 0 0 20px 0;
+  color: #a0a0a5;
 }
 .breadcrums__item {
   display: inline-block;
@@ -298,33 +303,79 @@ img {
   margin-bottom: 25px;
 }
 .page-main__intro {
-  position: relative;
   margin-bottom: 40px;
-  width: 100%;
-  min-height: 330px;
-  background-image: url('../img/intro-figures.svg'), url('../img/intro-back.png');
-  background-repeat: no-repeat;
-  -webkit-background-size: 394px 317px, cover;
-          background-size: 394px 317px, cover;
-  background-position: 0 -13px, center -150px;
-}
-.page-main__title {
-  position: absolute;
-  left: 30px;
-  top: 40px;
-  margin: 0;
-  width: 255px;
-  height: 75px;
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
 }
 .page-main__description {
   margin: 0 0 45px 0;
   font-size: 17px;
+  font-weight: 400;
   line-height: 22px;
+}
+.page-main__description p {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.page-main__feature {
+  margin-bottom: 60px;
+}
+.page-main__title {
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-main__ecologic {
+  margin-bottom: 55px;
+}
+.intro {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+  border: 1px solid #d7d7d7;
+  background-repeat: no-repeat;
+  -webkit-background-size: 394px 317px,
+    cover;
+          background-size: 394px 317px,
+    cover;
+  background-position: 0 -13px, center -150px;
+}
+.intro--bank {
+  background-image: url('../img/intro-figures.svg'), url('../img/intro-back.png');
+}
+.intro--accum {
+  background-image: url('../img/intro-figures.svg'), url('../img/new-york-back.jpg');
+}
+.intro__front {
+  min-height: 330px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../img/accum-side-back.png'), -webkit-linear-gradient(140deg, #ffffff 28%, transparent 28.1%);
+  background-image: url('../img/accum-side-back.png'), -o-linear-gradient(140deg, #ffffff 28%, transparent 28.1%);
+  background-image: url('../img/accum-side-back.png'), linear-gradient(-50deg, #ffffff 28%, transparent 28.1%);
+  background-position: right -90px bottom -70px, 0 0;
+}
+.intro__title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 0 0 25px;
+  margin: 0;
+  width: 320px;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.intro__title--large-title {
+  font-size: 26px;
+}
+.intro__title--low {
+  text-transform: lowercase;
 }
 .product-section {
   display: block;
@@ -609,4 +660,221 @@ img {
 }
 .product--pic-right .product__description {
   text-align: left;
+}
+.feature {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 5px 5px 5px 140px;
+  width: 530px;
+  height: 215px;
+  font-weight: 400;
+  border: 2px solid #d8d8d8;
+}
+.feature__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 200px;
+}
+.feature__title {
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+}
+.feature__description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+.feature__picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 105px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature__picture::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -25px;
+  width: 0;
+  height: 0;
+  border-top: 107px solid transparent;
+  border-bottom: 107px solid transparent;
+}
+.feature--secure .feature__picture {
+  background-color: #fba648;
+  background-image: url(../img/battery-secure.png);
+}
+.feature--secure .feature__picture::before {
+  border-left: 25px solid #fba648;
+}
+.feature--temperature .feature__picture {
+  background-color: #aeaeb3;
+  background-image: url(../img/battery-temperature.png);
+}
+.feature--temperature .feature__picture::before {
+  border-left: 25px solid #aeaeb3;
+}
+.feature--long .feature__picture {
+  background-color: #6ac8c8;
+  background-image: url(../img/battery-long.png);
+}
+.feature--long .feature__picture::before {
+  border-left: 25px solid #6ac8c8;
+}
+.feature--power .feature__picture {
+  background-color: #fbdd55;
+  background-image: url(../img/battery-power.png);
+}
+.feature--power .feature__picture::before {
+  border-left: 25px solid #fbdd55;
+}
+.feature--fast .feature__picture {
+  background-color: #7bbbe6;
+  background-image: url(../img/battery-fast.png);
+}
+.feature--fast .feature__picture::before {
+  border-left: 25px solid #7bbbe6;
+}
+.feature--range .feature__picture {
+  background-color: #bb9dd0;
+  background-image: url(../img/battery-range.png);
+}
+.feature--range .feature__picture::before {
+  border-left: 25px solid #bb9dd0;
+}
+.ecologic {
+  font-weight: 400;
+}
+.ecologic__title {
+  text-align: center;
+  font-size: 21px;
+}
+.ecologic__description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  letter-spacing: 0;
+}
+.ecologic__intro {
+  position: relative;
+}
+.ecologic__image {
+  width: 532px;
+}
+.ecologic__button {
+  display: block;
+  position: absolute;
+  right: 127px;
+  bottom: 53px;
+  padding: 12px 0;
+  width: 220px;
+  height: 50px;
+  font-size: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #e61e1e;
+}
+.ecologic__button:hover {
+  color: #ffffff;
+}
+.hexagon {
+  position: relative;
+  margin-right: 37px;
+  margin-left: 37px;
+  width: 75px;
+  height: 130px;
+  background-color: #6ac8c8;
+}
+.hexagon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -37px;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-right: 37px solid #6ac8c8;
+}
+.hexagon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -37px;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-left: 37px solid #6ac8c8;
+}
+.hexagon__content {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 115px/2);
+  width: 115px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  z-index: 1;
+}
+.fields__wrapper {
+  max-width: 865px;
+}
+.fields__item {
+  margin-bottom: 18px;
+}
+.fields__item--aside {
+  margin-right: 18px;
+}
+.fields__item a {
+  display: block;
+  position: relative;
+}
+.fields__label {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 0;
+  height: 47px;
+  text-align: center;
+  font-weight: 17px;
+  color: #ffffff;
+  font-weight: 400;
+  opacity: 0;
+  background-color: #fba648;
+}
+.fields__item a:hover .fields__label {
+  opacity: 1;
 }

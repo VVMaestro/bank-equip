@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Банковское оборудование</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,81 +14,94 @@
     <header class="page-header">
         <a name="top"></a>
         <section class="page-header__top">
-            <div class="page-header__columns">
-                <div class="page-header__col">
-                    <a href="#" class="page-header__search-button"></a>
-                </div>
-                <div class="page-header__col">
-                    <form action="GET" class="select__geo-form">
-                        <select class="select" name="geo">
-                            <option value="rus">Россия</option>
-                            <option value="eur">Европа</option>
-                            <option value="asia">Азия</option>
-                            <option value="us">Америка</option>
-                            <option value="afr">Африка и Средний Восток</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="page-header__col">
-                    <a href="#" class="page-header__map-link">Карта сайта</a>
-                </div>
-                <div class="page-header__col">
-                    <ul class="socials page-list">
-                        <li class="socials__item socials__item--gt"><a href="#"></a></li>
-                        <li class="socials__item socials__item--gl"><a href="#"></a></li>
-                        <li class="socials__item socials__item--fb"><a href="#"></a></li>
-                        <li class="socials__item socials__item--tw"><a href="#"></a></li>
-                    </ul>
+            <div class="container">
+                <div class="row justify-content-end align-items-center page-header__columns">
+                    <div class="col-auto page-header__col">
+                        <a href="#" class="page-header__search-button"></a>
+                    </div>
+                    <div class="col-auto page-header__col">
+                        <form action="" method="GET" class="select__geo-form">
+                            <select class="select" name="geo">
+                                <option value="rus">Россия</option>
+                                <option value="eur">Европа</option>
+                                <option value="asia">Азия</option>
+                                <option value="us">Америка</option>
+                                <option value="afr">Африка и Средний Восток</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-auto page-header__col">
+                        <a href="#" class="page-header__map-link">Карта сайта</a>
+                    </div>
+                    <div class="col-auto page-header__col">
+                        <ul class="socials page-list">
+                            <li class="socials__item socials__item--gt"><a href="#"></a></li>
+                            <li class="socials__item socials__item--gl"><a href="#"></a></li>
+                            <li class="socials__item socials__item--fb"><a href="#"></a></li>
+                            <li class="socials__item socials__item--tw"><a href="#"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <nav class="main-nav">
-            <div class="main-nav__colums">
-                <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип" width="210" height="32">
-                <ul class="main-nav__list page-list">
-                    <li class="main-nav__item main-nav__item--with-sub">
-                        <a href="#">Продукты для бизнеса</a>
-                        <div class="main-nav__submenu">
-                            <ul class="main-nav__sublist page-list">
-                                <li class="main-nav__subitem"><a href="#">Литий-титанатные аккумуляторы SCiB</a></li>
-                                <li class="main-nav__subitem"><a href="#">Промышленное оборудование</a></li>
-                                <li class="main-nav__subitem"><a href="#">Передача и распределение энергии</a></li>
-                                <li class="main-nav__subitem"><a href="#">Toshiba - глобальный интегратор
+            <div class="container">
+                <div class="row justify-content-between align-items-center main-nav__colums">
+                    <div class="col-auto">
+                        <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип"
+                        width="210" height="32">
+                    </div>
+                    <div class="col-auto">
+                        <ul class="row justify-content-end align-items-center main-nav__list page-list">
+                            <li class="col-auto main-nav__item main-nav__item--with-sub">
+                                <a href="#">Продукты для бизнеса</a>
+                                <div class="row main-nav__submenu">
+                                    <ul class="col-6 main-nav__sublist page-list">
+                                        <li class="main-nav__subitem"><a href="accum.html">Литий-титанатные аккумуляторы SCiB</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Промышленное оборудование</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Передача и распределение энергии</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Toshiba - глобальный интегратор
                                         логистических систем</a></li>
-                                <li class="main-nav__subitem"><a href="#">Банковское оборудование</a></li>
-                                <li class="main-nav__subitem"><a href="#">Система распознавания лиц</a></li>
-                            </ul>
-                            <ul class="main-nav__sublist page-list">
-                                <li class="main-nav__subitem"><a href="#">МФУ и принтеры</a></li>
-                                <li class="main-nav__subitem"><a href="#">Устройства хранения информации</a></li>
-                                <li class="main-nav__subitem"><a href="#">Системы кондиционирования</a></li>
-                                <li class="main-nav__subitem"><a href="#">Карты памяти</a></li>
-                                <li class="main-nav__subitem"><a href="#">Полупроводниковые компоненты</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="main-nav__item"><a href="#">Потребительские товары</a></li>
-                    <li class="main-nav__item"><a href="#">Пресса</a></li>
-                    <li class="main-nav__item"><a href="#">Сервисные центры</a></li>
-                    <li class="main-nav__item"><a href="#">О компании</a></li>
-                </ul>
+                                        <li class="main-nav__subitem"><a href="index.html">Банковское оборудование</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Система распознавания лиц</a></li>
+                                    </ul>
+                                    <ul class="col-6 main-nav__sublist page-list">
+                                        <li class="main-nav__subitem"><a href="#">МФУ и принтеры</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Устройства хранения информации</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Системы кондиционирования</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Карты памяти</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Полупроводниковые компоненты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col-auto main-nav__item"><a href="#">Потребительские товары</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Пресса</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Сервисные центры</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">О компании</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="page-main">
-        <div class="page-main__container">
+        <div class="page-main__container container">
             <p class="breadcrums page-main__breadcrums">
                 <a href="#" class="breadcrums__item">Главная</a>
                 <a href="#" class="breadcrums__item">Продукты для бизнеса</a>
                 <a href="index.html" class="breadcrums__item">Банковское оборудование</a>
                 <a class="breadcrums__item">Машины для обработки банкнот (серия FS)</a>
             </p>            
-            <div class="page-main__intro">
-                <p class="page-main__title">Банковское оборудование</p>
+            <div class="intro intro--bank page-main__intro">
+                <h1 class="intro__title">Банковское оборудование</h1>
             </div>
-            <p class="page-main__description">Подходящее решение для центральных банков и крупных коммерческих банков, высокоэффективная система, которая использует
-                передовые детекторы для удобной сортировки банкнот.</p>
+            <section class="page-main__description">
+                <p>
+                    Подходящее решение для центральных банков и крупных коммерческих банков, высокоэффективная система, которая использует
+                    передовые детекторы для удобной сортировки банкнот.
+                </p>
+            </section>
 
             <div class="product__wrapper">
                 <a href="#" class="product product--pic-left product--orange-b">
@@ -148,60 +163,79 @@
 
     <footer class="page-footer">
         <nav class="main-nav main-nav--footer">
-            <div class="main-nav__colums">
-                <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип" width="210" height="32">
-                <ul class="main-nav__list page-list">
-                    <li class="main-nav__item"><a href="#">Продукты для бизнеса</a></li>
-                    <li class="main-nav__item"><a href="#">Потребительсике товары</a></li>
-                    <li class="main-nav__item"><a href="#">Пресса</a></li>
-                    <li class="main-nav__item"><a href="#">Сервисные центры</a></li>
-                    <li class="main-nav__item"><a href="#">О компании</a></li>
-                </ul>
+            <div class="container">
+                <div class="row justify-content-between align-items-center main-nav__colums">
+                    <div class="col-auto">
+                        <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип"
+                        width="210" height="32">
+                    </div>
+                    <div class="col-auto">
+                        <ul class="row justify-content-end align-items-center main-nav__list page-list">
+                            <li class="col-auto main-nav__item"><a href="#">Продукты для бизнеса</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Потребительсике товары</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Пресса</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Сервисные центры</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">О компании</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <a href="#top" class="up-button main-nav__up-button"></a>
         </nav>
         <section class="page-footer__info">
-            <div class="page-footer__colums">
-                <div>
-                    <h3 class="page-footer__title">Навигация по новостям</h3>
-                    <ul class="page-footer__news-list page-list">
-                        <li class="page-footer__news"><a href="#">Почта России</a></li>
-                        <li class="page-footer__news"><a href="#">Социальная инфраструктура</a></li>
-                        <li class="page-footer__news"><a href="#">Энергетика</a></li>
-                        <li class="page-footer__news"><a href="#">Иннопром</a></li>
-                        <li class="page-footer__news"><a href="#">Recfaces</a></li>
-                        <li class="page-footer__news"><a href="#">IRID</a></li>
-                        <li class="page-footer__news"><a href="#">Передача и распределение энергии</a></li>
-                        <li class="page-footer__news"><a href="#">Банковское оборудование</a></li>
-                        <li class="page-footer__news"><a href="#">Здравоохранение</a></li>
-                        <li class="page-footer__news"><a href="#">Роботы</a></li>
-                        <li class="page-footer__news"><a href="#">Гидропонные системы</a></li>
-                    </ul>
-                    <p class="page-footer__madeby">Сделано в Gefest Digital</p>
-                </div>
-                <div>
-                    <h3 class="page-footer__title">О компании</h3>
-                    <p class="page-footer__text">Больше, чем обычные технологии.
-                        Больше, чем бизнес. Toshiba – это забота о людях. Продукты
-                        и решения, которые помогают людям жить лучше.
-                    </p>
-                    <ul class="socials page-list">
-                        <li class="socials__item socials__item--footer socials__item--gt"><a href="#"></a></li>
-                        <li class="socials__item socials__item--footer socials__item--gl"><a href="#"></a></li>
-                        <li class="socials__item socials__item--footer socials__item--fb"><a href="#"></a></li>
-                        <li class="socials__item socials__item--footer socials__item--tw"><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="page-footer__title">Информация</h3>
-                    <ul class="page-footer__info-list page-list">
-                        <li class="page-footer__info-item"><a href="#">Сведения о защите информации</a></li>
-                        <li class="page-footer__info-item"><a href="#">Условия использования материалов</a></li>
-                    </ul>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <h3 class="page-footer__title">Навигация по новостям</h3>
+                        <ul class="page-footer__news-list page-list">
+                            <li class="page-footer__news"><a href="#">Почта России</a></li>
+                            <li class="page-footer__news"><a href="#">Социальная инфраструктура</a></li>
+                            <li class="page-footer__news"><a href="#">Энергетика</a></li>
+                            <li class="page-footer__news"><a href="#">Иннопром</a></li>
+                            <li class="page-footer__news"><a href="#">Recfaces</a></li>
+                            <li class="page-footer__news"><a href="#">IRID</a></li>
+                            <li class="page-footer__news"><a href="#">Передача и распределение энергии</a></li>
+                            <li class="page-footer__news"><a href="#">Банковское оборудование</a></li>
+                            <li class="page-footer__news"><a href="#">Здравоохранение</a></li>
+                            <li class="page-footer__news"><a href="#">Роботы</a></li>
+                            <li class="page-footer__news"><a href="#">Гидропонные системы</a></li>
+                        </ul>
+                        <p class="page-footer__madeby">Сделано в Gefest Digital</p>
+                    </div>
+                    <div class="col-auto">
+                        <h3 class="page-footer__title">О компании</h3>
+                        <p class="page-footer__text">Больше, чем обычные технологии. 
+                            Больше, чем бизнес. Toshiba – это забота о людях. Продукты
+                            и решения, которые помогают людям жить лучше.
+                        </p>
+                        <ul class="socials page-list">
+                            <li class="socials__item socials__item--footer socials__item--gt"><a href="#"></a></li>
+                            <li class="socials__item socials__item--footer socials__item--gl"><a href="#"></a></li>
+                            <li class="socials__item socials__item--footer socials__item--fb"><a href="#"></a></li>
+                            <li class="socials__item socials__item--footer socials__item--tw"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3 class="page-footer__title">Информация</h3>
+                        <ul class="page-footer__info-list page-list">
+                            <li class="page-footer__info-item"><a href="#">Сведения о защите информации</a></li>
+                            <li class="page-footer__info-item"><a href="#">Условия использования материалов</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" 
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" 
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" 
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

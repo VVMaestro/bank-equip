@@ -1,0 +1,119 @@
+.feature {
+    position: relative;
+
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 140px;
+    width: 530px;
+    height: 215px;
+
+    font-weight: 400;
+
+    border: 2px solid #d8d8d8;
+}
+
+.feature__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 200px;
+}
+
+.feature__title {
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.feature__description {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.feature__picture {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 105px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before {
+        content: '';
+
+        display: block;
+        position: absolute;
+
+        top: 0;
+        bottom: 0;
+        right: -25px;
+
+        width: 0;
+        height: 0;
+
+        border-top: 107px solid transparent;
+        border-bottom: 107px solid transparent;
+    }
+}
+
+.feature--secure .feature__picture {
+    background-color: #fba648;
+    background-image: url(../img/battery-secure.png);
+
+    &::before {
+        border-left: 25px solid #fba648;
+    }
+}
+
+.feature--temperature .feature__picture {
+    background-color: #aeaeb3;
+    background-image: url(../img/battery-temperature.png);
+
+    &::before {
+        border-left: 25px solid #aeaeb3;
+    }
+}
+
+.feature--long .feature__picture {
+    background-color: #6ac8c8;
+    background-image: url(../img/battery-long.png);
+
+    &::before {
+        border-left: 25px solid #6ac8c8;
+    }
+}
+
+.feature--power .feature__picture {
+    background-color: #fbdd55;
+    background-image: url(../img/battery-power.png);
+
+    &::before {
+        border-left: 25px solid #fbdd55;
+    }
+}
+
+.feature--fast .feature__picture {
+    background-color: #7bbbe6;
+    background-image: url(../img/battery-fast.png);
+
+    &::before {
+        border-left: 25px solid #7bbbe6;
+    }
+}
+
+.feature--range .feature__picture {
+    background-color: #bb9dd0;
+    background-image: url(../img/battery-range.png);
+
+    &::before {
+        border-left: 25px solid #bb9dd0;
+    }
+}

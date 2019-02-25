@@ -1,0 +1,61 @@
+.intro {
+    position: relative;
+
+    width: 100%;
+    min-height: 330px;
+
+    border: 1px solid #d7d7d7;
+    
+    background-repeat: no-repeat;
+    background-size: 394px 317px,
+    cover;
+    background-position: 0 -13px,
+    center -150px;
+
+    &--bank {
+        background-image: url('../img/intro-figures.svg'),
+        url('../img/intro-back.png');
+    }
+    &--accum {
+        background-image: url('../img/intro-figures.svg'),
+        url('../img/new-york-back.jpg');
+    }
+}
+
+.intro__front {
+    min-height: 330px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-image: url('../img/accum-side-back.png'),
+    linear-gradient(-50deg, #ffffff 28%, transparent 28.1%);
+    background-position: right -90px bottom -70px,
+    0 0;
+}
+
+.intro__title {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    box-sizing: border-box;
+    padding: 25px 0 0 25px;
+    margin: 0;
+    width: 320px;
+
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: fade(#ffffff, 80%);
+
+    &--large-title {
+        font-size: 26px;
+    }
+
+    &--low {
+        text-transform: lowercase;
+    }
+}
