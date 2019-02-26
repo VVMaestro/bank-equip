@@ -14,10 +14,6 @@
 
     transition: background-color 0.1s ease-in 0s;
 
-    // &:last-child {
-    //     margin-right: 0;
-    // }
-
     &--orange {
         background-color: #fbb569;        
     }
@@ -84,13 +80,17 @@
 .product-section__image {
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    padding: 35px 5px 0 5px;
+    min-height: 195px;
+
+    overflow: hidden;
 }
 
 .product-section__title {
     text-align: center;
     font-size: 14px;
+    font-weight: 400;
     line-height: 18px;
     color: #000000;
 }

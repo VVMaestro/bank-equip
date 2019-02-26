@@ -1,0 +1,113 @@
+.product-2 {
+    display: block;
+
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    min-height: 265px;
+    width: 100%;
+
+    color: #000000;
+
+    border: 2px solid #e7e7e7;
+    background-image: linear-gradient(112deg, #fbb569 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    url(../img/stations.jpg);
+    background-position: 0 0, 0 -50px;
+    background-repeat: no-repeat;
+
+    &:hover {
+        color: #000000;
+        background-image: linear-gradient(112deg, #fba648 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        url(../img/stations.jpg);
+    }
+}
+
+.product-2--reverse-green {
+    background-image: linear-gradient(-112deg, #85d2d2 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    url(../img/control.jpg);
+    background-position: 0 0,
+    100% -50px;
+
+    &:hover {
+        background-image: linear-gradient(-112deg, #6ac8c8 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        url(../img/control.jpg);
+    }
+
+    & .product-2__columns {
+        justify-content: flex-start;
+    }
+
+    & .product-2__description {
+        text-align: left;
+    }
+}
+
+.product-2--reverse-violet {
+    background-image: linear-gradient(-112deg, #c7afd8 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        url(../img/communications.jpg);
+    background-position: 0 0,
+        120% -90px;
+
+    &:hover {
+        background-image: linear-gradient(-112deg, #bb9dd0 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/communications.jpg);
+    }
+
+    & .product-2__columns {
+        justify-content: flex-start;
+    }
+
+    & .product-2__description {
+        text-align: left;
+    }
+}
+
+.product-2--blue {
+    background-image: linear-gradient(112deg, #93c7ea 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    url(../img/hight-volt-lines.jpg);
+    background-position: 0 0,
+    0 -100px;
+
+    &:hover {
+        color: #000000;
+        background-image: linear-gradient(112deg, #7bbbe6 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/hight-volt-lines.jpg);
+    }
+}
+
+.product-2--yellow {
+    background-image: linear-gradient(112deg, #fbe374 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        url(../img/rele.jpg);
+    background-position: 0 0,
+        0 -60px;
+
+    &:hover {
+        color: #000000;
+        background-image: linear-gradient(112deg, #fbdd55 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/rele.jpg);
+    }
+}
+
+.product-2__columns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-height: 265px;
+}
+
+.product-2__description {
+    width: 640px;
+    text-align: right;
+    font-weight: 400;
+}
+
+.product-2__title {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.product-2__text {
+    font-size: 16px;
+    line-height: 18px;
+}

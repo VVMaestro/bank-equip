@@ -1,0 +1,139 @@
+.pic-hexagon {
+    position: relative;
+
+    margin-right: auto;
+    margin-left: auto;
+    width: 85px;
+    height: 150px;
+
+    background-color: #6ac8c8;
+    background-position: center;
+    background-size: 80px auto;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: '';
+
+        display: block;
+        position: absolute;
+
+        left: -44px;
+        top: 0;
+        bottom: 0;
+
+        width: 0;
+        height: 0;
+
+        border-top: 75px solid transparent;
+        border-bottom: 75px solid transparent;
+        border-right: 44px solid #6ac8c8;
+    }
+
+    &::after {
+        content: '';
+
+        display: block;
+        position: absolute;
+
+        right: -44px;
+        top: 0;
+        bottom: 0;
+
+        width: 0;
+        height: 0;
+
+        border-top: 75px solid transparent;
+        border-bottom: 75px solid transparent;
+        border-left: 44px solid #6ac8c8;
+    }
+
+    &--orange {
+        background-color: #fba648;
+    }
+    &--orange::before {
+        border-right-color: #fba648;
+    }
+    &--orange::after {
+        border-left-color: #fba648;
+    }
+
+    &--blue {
+        background-color: #7bbbe6;
+    }
+    &--blue::before {
+        border-right-color: #7bbbe6;
+    }
+    &--blue::after {
+        border-left-color: #7bbbe6;
+    }
+
+    &--grey {
+        background-color: #aeaeb3;
+    }
+    &--grey::before {
+        border-right-color: #aeaeb3;
+    }
+    &--grey::after {
+        border-left-color: #aeaeb3;
+    }
+
+    &--yellow {
+        background-color: #fbdd55;
+    }
+    &--yellow::before {
+        border-right-color: #fbdd55;
+    }
+    &--yellow::after {
+        border-left-color: #fbdd55;
+    }
+
+    &--violet {
+        background-color: #bb9dd0;
+    }
+    &--violet::before {
+        border-right-color: #bb9dd0;
+    }
+    &--violet::after {
+        border-left-color: #bb9dd0;
+    }
+
+    &--glasses {
+        background-image: url(../img/glasses.png);
+    }
+
+    &--face {
+        background-image: url(../img/face-angle.png);
+    }
+
+    &--men {
+        background-image: url(../img/standing-up-man.png);
+        background-size: 65px auto;
+    }
+
+    &--plastic {
+        background-image: url(../img/plastic-surgery.png);
+        background-size: 70px auto;
+    }
+
+    &--masks {
+        background-image: url(../img/theater-masks.png);
+    }
+
+    &--bandit {
+        background-image: url(../img/bandit.png);
+    }
+}
+
+.pic-hexagon__wrapper {
+    min-height: 315px;
+}
+
+.pic-hexagon__label {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
