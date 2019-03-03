@@ -2,14 +2,14 @@
     position: relative;
 
     width: 100%;
-    min-height: 330px;
+    min-height: 237px;
 
     border: 1px solid #d7d7d7;
     
     background-repeat: no-repeat;
-    background-size: 394px 317px,
-    cover;
-    background-position: 0 -13px,
+    background-size: 220px 167px,
+    auto;
+    background-position: -10px -13px,
     center -150px;
 
     &--bank {
@@ -23,32 +23,63 @@
     &--logic-system {
         background-image: url('../img/intro-figures.svg'),
         url('../img/intro-logic-system.jpg');
-        background-position: 0 -13px,
+        background-position: -10px -13px,
         center -250px;
     }
     &--face-recognition {
         background-image: url('../img/intro-figures.svg'),
         url('../img/intro-face-rec.jpg');
-        background-position: 0 -13px,
+        background-position: -10px -13px,
         center -230px;
     }
     &--energy {
         background-image: url('../img/intro-figures.svg'),
         url('../img/intro-energy.jpg');
-        background-position: 0 -13px,
+        background-position: -10px -13px,
         center -240px;
     }
 }
 
+@media (min-width: @medium) {
+    .intro {
+        min-width: 267px;
+        background-size: 319px 248px,
+        cover;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .intro {
+        min-height: 330px;
+        background-size: 413px 318px,
+        cover;
+    }
+}
+
 .intro__front {
-    min-height: 330px;
+    min-height: 237px;
     width: 100%;
 
     background-repeat: no-repeat;
     background-image: url('../img/accum-side-back.png'),
     linear-gradient(-50deg, #ffffff 28%, transparent 28.1%);
-    background-position: right -90px bottom -70px,
+    background-position: 100% 100%,
     0 0;
+    background-size: 178px 155px, auto;
+}
+
+@media (min-width: @medium) {
+    .intro__front {
+        min-width: 267px;
+        background-size: 221px 210px, auto;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .intro__front {
+        min-height: 331px;
+        background-size: 300px 250px, auto;
+    }
 }
 
 .intro__title {
@@ -58,20 +89,20 @@
     top: 0;
 
     box-sizing: border-box;
-    padding: 25px 0 0 25px;
+    padding: 14px 0 0 6px;
     margin: 0;
-    width: 320px;
+    width: 160px;
 
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 14px;
+    line-height: 19px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
     color: fade(#ffffff, 80%);
 
     &--medium-title {
-        padding: 15px 0 0 20px;
-        font-size: 26px;
+        padding: 14px 0 0 6px;
+        font-size: 14px;
     }
     
     &--large-title {
@@ -82,5 +113,29 @@
 
     &--low {
         text-transform: lowercase;
+    }
+}
+
+@media (min-width: @medium) {
+    .intro__title {
+        width: 220px;
+    }
+
+    .intro__title--medium-title {
+        padding: 14px 0 0 10px;
+        font-size: 20px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .intro__title {
+        width: 320px;
+    }
+
+    .intro__title--medium-title {
+        padding: 14px 0 0 15px;
+        font-size: 26px;
+        line-height: 38px;
     }
 }
