@@ -1,5 +1,12 @@
-.ecologic {
-    font-weight: 400;
+.ecologic__advantages {
+    display: none;
+}
+
+@media (min-width: @small) {
+    .ecologic__advantages {
+        display: flex;
+        margin-bottom: 40px;
+    }
 }
 
 .ecologic__title {
@@ -10,23 +17,69 @@
 .ecologic__description {
     box-sizing: border-box;
     margin-bottom: 25px;
-    padding-left: 25px;
 
+    font-weight: 400;
     letter-spacing: 0;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .ecologic__intro {
-    position: relative;
+    position: relative;    
 }
 
-.ecologic__image {
-    width: 100%;
-    overflow: hidden;
+@media (min-width: @small) {
+    .ecologic__intro {
+        width: 100%;
+        height: 370px;
+
+        background-image: url(../img/environmental-protection.jpg);
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: cover;
+    }
+}
+
+@media (min-width: @large) {
+    .ecologic__intro {
+        height: 390px;
+    }
 }
 
 .ecologic__button {
-    position: absolute;
+    position: static;
+    display: block;
+    margin: 0 auto;
+}
 
-    right: 127px;
-    bottom: 53px;
+@media (min-width: @small) {
+    .ecologic__button {
+        position: absolute;
+
+        left: calc(50% - 220px/2);
+        bottom: 25px;
+    }
+}
+
+@media (min-width: @large) {
+    .ecologic__button {
+        position: absolute;
+
+        left: calc(50% - 220px/2);
+        bottom: 53px;
+    }
+}
+
+.ecologic__adv-item {
+    margin-left: 30px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: @large) {
+    .ecologic__adv-item {
+        margin-left: 0;
+    }
 }

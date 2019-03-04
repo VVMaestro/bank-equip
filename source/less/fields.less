@@ -1,18 +1,159 @@
-.fields__wrapper {
-    max-width: 865px;
+.fields {
+    display: none;
+
+    margin: 0 auto;
+    width: 730px;
 }
 
-.fields__item {
-    margin-bottom: 18px;
+@media (min-width: @medium) {
+    .fields {
+        display: block;
+    }
+}
 
-    &--aside {
-        margin-right: 18px;
+.fields__mobile-list {
+    margin: 0 auto;
+    width: 300px;
+}
+
+@media (min-width: @medium) {
+    .fields__mobile-list {
+        display: none;
+    }
+}
+
+.fields__mobile-item a {
+    position: relative;
+
+    padding-right: 25px;
+
+    color: #000000;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 33px;
+
+    &::before {
+        content: '';
+
+        display: block;
+        position: absolute;
+
+        right: 0;
+        bottom: 3px;
+
+        width: 7px;
+        height: 13px;
+
+        background-image: url('../img/list-arrow.png');
+        background-repeat: no-repeat;
+        background-size: 7px 13px;
+    }
+
+    &:hover,
+    &:focus {
+        color: @red;
     }
 }
 
 .fields__item a {
     display: block;
     position: relative;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fields__item {
+    display: inline-block;
+    margin-bottom: 7px;
+
+    &--trans {
+        margin-right: 12px;
+        float: left;
+    }
+
+    &--r-and-b {
+        margin-right: 12px;
+        float: left;
+    }
+
+    &--trans a {
+        width: 313px;
+        height: 370px;
+    }
+    &--prom-equip a,
+    &--product a {
+        width: 395px;
+        height: 178px;
+    }
+    &--r-and-b a {
+        width: 313px;
+        height: 172px;
+    }
+    &--energy a {
+        width: 395px;
+        height: 172px;
+    }
+
+    &--trans a {
+        background-image: url(../img/fields-1.jpg);
+    }
+    &--prom-equip a {
+        background-image: url(../img/fields-2.jpg);
+    }
+    &--product a {
+        background-image: url(../img/fields-3.jpg);
+    }
+    &--r-and-b a {
+        background-image: url(../img/fields-4.jpg);
+    }
+    &--energy a {
+        background-image: url(../img/fields-5.jpg);
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .fields {
+        max-width: 1100px;
+        width: auto;
+    }
+
+    .fields__item {
+        margin-bottom: 10px;
+
+        &--trans {
+            margin-right: 7px;
+        }
+        &--r-and-b {
+            margin-right: 4px;
+            float: none;
+        }
+        &--prom-equip {
+            margin-right: 4px;
+        }        
+
+        &--trans a {
+            width: 250px;
+            height: 370px;
+        }
+        &--prom-equip a {
+            width: 460px;
+            height: 178px;
+        }
+        &--product a {
+            width: 370px;
+            height: 178px;
+        }
+        &--r-and-b a {
+            width: 370px;
+            height: 174px;
+        }
+        &--energy a {
+            width: 460px;
+            height: 174px;
+        }
+    }
 }
 
 .fields__label {
@@ -31,8 +172,14 @@
     color: #ffffff;
     font-weight: 400;
 
-    opacity: 0;
+    opacity: 1;
     background-color: #fba648;
+}
+
+@media (min-width: @extraLarge) {
+    .fields__label {
+        opacity: 0;
+    }
 }
 
 .fields__item a:hover .fields__label {

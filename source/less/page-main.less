@@ -2,8 +2,10 @@
     margin-bottom: 85px;
 }
 
-.page-main__container {
-    padding-top: 10px;
+@media (min-width: @small) {
+    .page-main__container {
+        padding-top: 10px;
+    }
 }
 
 .page-main__breadcrums {
@@ -34,10 +36,22 @@
 .page-main__title {
     margin-bottom: 25px;
 
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (min-width: @small) {
+    .page-main__title {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: @large) {
+    .page-main__title {
+        font-size: 26px;
+    }
 }
 
 .page-main__ecologic {

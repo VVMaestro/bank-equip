@@ -19,7 +19,7 @@
     background-position: center;
 }
 
-.page-header__map-link {
+.page-header__map-link a {
     font-size: 16px;
     font-weight: 100;
     line-height: 18px;
@@ -33,11 +33,21 @@
     }
 }
 
+.page-header__map-link {
+    display: none;
+}
+
+@media (min-width: @small) {
+    .page-header__map-link {
+        display: initial;
+    }
+}
+
 .page-header__col {
     position: relative;
 
-    margin-right: 15px;
-    padding-right: 15px;
+    margin-right: 5px;
+    padding-right: 5px;
     padding-left: 0;
 
     &:last-child {
@@ -61,5 +71,12 @@
         height: 15px;
 
         background-color: @red;
+    }
+}
+
+@media (min-width: @small) {
+    .page-header__col {
+        margin-right: 15px;
+        padding-right: 15px;
     }
 }
