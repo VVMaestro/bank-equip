@@ -80,6 +80,10 @@
     line-height: 22px;
 }
 
+.feature--big .feature__description {
+    line-height: 1.2;
+}
+
 @media (min-width: @small) {
     .feature__description {
         display: initial;
@@ -135,8 +139,8 @@
 }
 
 .feature--big .feature__picture::before {
-    border-top: 117px solid transparent;
-    border-bottom: 116px solid transparent;
+    border-top: 114px solid transparent;
+    border-bottom: 113px solid transparent;
 }
 
 .feature--secure .feature__picture {
@@ -196,6 +200,7 @@
 .feature--runer .feature__picture {
     background-color: #6ac8c8;
     background-image: url(../img/runer.png);
+    background-size: 100% auto;
 
     &::before {
         border-left-color: #6ac8c8;

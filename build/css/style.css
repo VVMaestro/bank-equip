@@ -577,7 +577,7 @@ a:hover {
   margin: 0;
   width: 160px;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 1.4;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -597,12 +597,13 @@ a:hover {
 }
 @media (min-width: 576px) {
   .intro__title {
+    padding: 14px 0 0 10px;
     width: 220px;
+    font-size: 26px;
   }
   .intro__title--medium-title {
     padding: 14px 0 0 10px;
     font-size: 20px;
-    line-height: 29px;
   }
 }
 @media (min-width: 992px) {
@@ -612,7 +613,6 @@ a:hover {
   .intro__title--medium-title {
     padding: 14px 0 0 15px;
     font-size: 26px;
-    line-height: 38px;
   }
 }
 .product-section {
@@ -1046,6 +1046,9 @@ a:hover {
   font-size: 15px;
   line-height: 22px;
 }
+.feature--big .feature__description {
+  line-height: 1.2;
+}
 @media (min-width: 576px) {
   .feature__description {
     display: initial;
@@ -1089,8 +1092,8 @@ a:hover {
   }
 }
 .feature--big .feature__picture::before {
-  border-top: 117px solid transparent;
-  border-bottom: 116px solid transparent;
+  border-top: 114px solid transparent;
+  border-bottom: 113px solid transparent;
 }
 .feature--secure .feature__picture {
   background-color: #fba648;
@@ -1137,6 +1140,8 @@ a:hover {
 .feature--runer .feature__picture {
   background-color: #6ac8c8;
   background-image: url(../img/runer.png);
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
 }
 .feature--runer .feature__picture::before {
   border-left-color: #6ac8c8;

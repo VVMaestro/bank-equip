@@ -30,8 +30,8 @@
                             </select>
                         </form>
                     </div>
-                    <div class="col-auto page-header__col">
-                        <a href="#" class="page-header__map-link">Карта сайта</a>
+                    <div class="col-auto page-header__col page-header__map-link">
+                        <a href="#">Карта сайта</a>
                     </div>
                     <div class="col-auto page-header__col">
                         <ul class="socials page-list">
@@ -44,26 +44,28 @@
                 </div>
             </div>
         </section>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
             <div class="container">
                 <div class="row justify-content-between align-items-center main-nav__colums">
                     <div class="col-auto">
                         <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип" width="210" height="32">
                     </div>
                     <div class="col-auto">
-                        <ul class="row justify-content-end align-items-center main-nav__list page-list">
-                            <li class="col-auto main-nav__item main-nav__item--with-sub">
+                        <button class="main-nav__switch"></button>
+                    </div>
+                    <div class="col-12 col-sm-auto main-nav__wrapper">
+                        <ul class="row no-gutters justify-content-lg-end align-items-center main-nav__list page-list">
+                            <li class="col-12 col-sm-auto main-nav__item main-nav__item--with-sub">
                                 <a href="#">Продукты для бизнеса</a>
                                 <div class="row main-nav__submenu">
                                     <ul class="col-6 main-nav__sublist page-list">
-                                        <li class="main-nav__subitem"><a href="accum.html">Литий-титанатные
-                                                аккумуляторы SCiB</a></li>
+                                        <li class="main-nav__subitem"><a href="#">Литий-титанатные аккумуляторы SCiB</a></li>
                                         <li class="main-nav__subitem"><a href="#">Промышленное оборудование</a></li>
                                         <li class="main-nav__subitem"><a href="energy.html">Передача и распределение энергии</a></li>
-                                        <li class="main-nav__subitem"><a href="#">Toshiba - глобальный интегратор
+                                        <li class="main-nav__subitem"><a href="logic-system.html">Toshiba - глобальный интегратор
                                                 логистических систем</a></li>
                                         <li class="main-nav__subitem"><a href="index.html">Банковское оборудование</a></li>
-                                        <li class="main-nav__subitem"><a href="#">Система распознавания лиц</a></li>
+                                        <li class="main-nav__subitem"><a href="face-recognition.html">Система распознавания лиц</a></li>
                                     </ul>
                                     <ul class="col-6 main-nav__sublist page-list">
                                         <li class="main-nav__subitem"><a href="#">МФУ и принтеры</a></li>
@@ -74,10 +76,11 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="col-auto main-nav__item"><a href="#">Потребительские товары</a></li>
-                            <li class="col-auto main-nav__item"><a href="#">Пресса</a></li>
-                            <li class="col-auto main-nav__item"><a href="#">Сервисные центры</a></li>
-                            <li class="col-auto main-nav__item"><a href="#">О компании</a></li>
+                            <li class="col-12 col-sm-auto main-nav__item"><a href="#">Потребительские товары</a></li>
+                            <li class="col-12 col-sm-auto main-nav__item"><a href="#">Пресса</a></li>
+                            <li class="col-12 col-sm-auto main-nav__item"><a href="#">Сервисные центры</a></li>
+                            <li class="col-12 col-sm-auto main-nav__item"><a href="#">О компании</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -191,25 +194,30 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center main-nav__colums">
                     <div class="col-auto">
-                        <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип" width="210" height="32">
+                        <img class="main-nav__logo" src="img/Toshiba_logo.png" alt="Логотип"
+                        width="210" height="32">
                     </div>
-                    <div class="col-auto">
-                        <ul class="row justify-content-end align-items-center main-nav__list page-list">
+                    <div class="col-auto main-nav__wrapper">
+                        <ul class="row no-gutters justify-content-end align-items-center main-nav__list page-list">
                             <li class="col-auto main-nav__item"><a href="#">Продукты для бизнеса</a></li>
                             <li class="col-auto main-nav__item"><a href="#">Потребительсике товары</a></li>
                             <li class="col-auto main-nav__item"><a href="#">Пресса</a></li>
                             <li class="col-auto main-nav__item"><a href="#">Сервисные центры</a></li>
                             <li class="col-auto main-nav__item"><a href="#">О компании</a></li>
+                            <li class="col-auto main-nav__item"><a href="#">Контакты</a></li>
                         </ul>
+                    </div>
+                    <div class="col-auto main-nav__up-button">
+                        <a href="#top" class="up-button"></a>
                     </div>
                 </div>
             </div>
-            <a href="#top" class="up-button main-nav__up-button"></a>
+            
         </nav>
         <section class="page-footer__info">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-auto">
+                <div class="row justify-content-lg-between page-footer__colums">
+                    <div class="col-lg-4">
                         <h3 class="page-footer__title">Навигация по новостям</h3>
                         <ul class="page-footer__news-list page-list">
                             <li class="page-footer__news"><a href="#">Почта России</a></li>
@@ -223,12 +231,11 @@
                             <li class="page-footer__news"><a href="#">Здравоохранение</a></li>
                             <li class="page-footer__news"><a href="#">Роботы</a></li>
                             <li class="page-footer__news"><a href="#">Гидропонные системы</a></li>
-                        </ul>
-                        <p class="page-footer__madeby">Сделано в Gefest Digital</p>
+                        </ul>                        
                     </div>
-                    <div class="col-auto">
+                    <div class="col-sm-5 col-lg-4 page-footer__contacts">
                         <h3 class="page-footer__title">О компании</h3>
-                        <p class="page-footer__text">Больше, чем обычные технологии.
+                        <p class="page-footer__text">Больше, чем обычные технологии. 
                             Больше, чем бизнес. Toshiba – это забота о людях. Продукты
                             и решения, которые помогают людям жить лучше.
                         </p>
@@ -239,13 +246,20 @@
                             <li class="socials__item socials__item--footer socials__item--tw"><a href="#"></a></li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-sm-auto">
                         <h3 class="page-footer__title">Информация</h3>
                         <ul class="page-footer__info-list page-list">
                             <li class="page-footer__info-item"><a href="#">Сведения о защите информации</a></li>
                             <li class="page-footer__info-item"><a href="#">Условия использования материалов</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="page-footer__copyright">
+                    <p>
+                        Copyright &copy; 1995-2019 TOSHIBA CORPORATION, ALL 
+                        Rights Reserved.
+                    </p>
+                    <p>Сделано в Gefest Digital</p>
                 </div>
             </div>
         </section>
