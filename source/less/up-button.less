@@ -1,9 +1,9 @@
 .up-button {
     display: block;
-    position: absolute;
-
-    width: 53px;
-    height: 53px;
+    position: relative;
+    
+    width: 42px;
+    height: 42px;
 
     border-radius: 50%;
     background-color: #c2c2c2;
@@ -24,5 +24,12 @@
         border-left: 2px solid #ffffff;   
         
         transform: rotate(45deg);
+    }
+}
+
+@media (min-width: @small) {
+    .up-button {
+        width: 53px;
+        height: 53px;
     }
 }

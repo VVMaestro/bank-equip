@@ -3,15 +3,38 @@
 }
 
 .page-footer__info {
-    padding: 52px 0 42px 0;
+    padding: 35px 0 42px 0;
+}
+
+.page-footer__colums {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.page-footer__contacts {
+    position: static;
+    margin-bottom: 30px;
+}
+
+@media (min-width: @small) {
+    .page-footer__contacts {
+        margin-bottom: 0;
+    }
 }
 
 .page-footer__title {
-    margin: 0 0 22px 0;
+    margin: 0 0 14px 0;
 
-    font-size: 22px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+@media (min-width: @medium) {
+    .page-footer__title {
+        font-size: 22px;
+        margin: 0 0 22px 0;
+    }
 }
 
 .page-footer__news-list {
@@ -33,9 +56,9 @@
 .page-footer__news a {
     display: block;
 
-    padding: 8px 12px;
+    padding: 4px 8px;
 
-    font-size: 12px;
+    font-size: 9px;
     line-height: 14px;
     font-weight: 100;
     text-decoration: none;
@@ -53,13 +76,50 @@
     }
 }
 
-.page-footer__madeby {
-    margin: 0;
+@media (min-width: @medium) {
+    .page-footer__news a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
 
-    font-size: 12px;
+.page-footer__copyright {
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    min-height: 90px;
+
+    font-size: 13px;
     line-height: 19px;
     font-weight: 100;
     color:#9a9a9a;
+
+    background-image: url(../img/footer_line.png),
+    url(../img/footer_line.png);
+    background-repeat: no-repeat;
+    background-position: center 0, center 100%;
+}
+
+.page-footer__copyright p {
+    margin: 0 0 15px 0;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+@media (min-width: @small) {
+    .page-footer__copyright {
+        width: 400px;
+        background-size: 412px 2px;
+    }
+}
+
+@media (min-width: @large) {
+    .page-footer__copyright {
+        padding: 0;
+        background-image: none;
+    }
 }
 
 .page-footer__text {
@@ -83,5 +143,17 @@
     &:hover,
     &:focus {
         color: @red;
+    }
+}
+
+@media (min-width: @medium) and (max-width: @large) {
+    .page-footer__contacts .socials {
+        position: absolute;
+        bottom: -30px;
+        right: 15px;
+    }
+
+    .page-footer__text {
+        margin-bottom: 0;
     }
 }
