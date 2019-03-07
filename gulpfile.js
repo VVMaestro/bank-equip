@@ -5,7 +5,9 @@ var gulp = require('gulp'),
   less = require('gulp-less'),
   rename = require("gulp-rename"),
   imagemin = require('gulp-imagemin'),
-  plumber = require('gulp-plumber');
+  plumber = require('gulp-plumber'),
+  postHtml = require('gulp-posthtml')
+  include = require('posthtml-include');
 
 
 var paths = {
@@ -41,6 +43,9 @@ gulp.task('clean', function () {
 gulp.task('html', function () {
   return gulp.src(paths.html.source)
     .pipe(plumber())
+    .pipe(postHtml([
+      include()
+    ]))
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browserSync.reload({
       stream: true
