@@ -15,6 +15,10 @@
     &--bank {
         background-image: url('../img/intro-figures.svg'),
         url('../img/intro-back.png');
+        background-size: 220px 167px,
+        170% auto;
+        background-position: -10px -13px,
+        center;
     }
     &--accum {
         background-image: url('../img/intro-figures.svg'),
@@ -45,6 +49,13 @@
         min-width: 267px;
         background-size: 319px 248px,
         auto;
+
+        &--bank {
+            background-size: 319px 248px,
+            120% auto;
+            background-position: -10px -13px,
+            center -80px;
+        }
     }
 }
 
@@ -53,6 +64,13 @@
         min-height: 330px;
         background-size: 413px 318px,
         cover;
+
+        &--bank {
+            background-size: 413px 318px,
+            cover;
+            background-position: -10px -13px,
+            center -100px;
+        }
     }
 }
 
@@ -88,14 +106,36 @@
     }
 }
 
-.intro__title {
+.intro__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
 
     left: 0;
     top: 0;
 
+    width: 170px;
+    height: 70px;
+}
+
+@media (min-width: @small) {
+    .intro__wrapper {
+        width: 270px;
+        height: 110px;
+    }    
+}
+
+@media (min-width: @large) {
+    .intro__wrapper {
+        width: 310px;
+        height: 145px;
+    }
+}
+
+.intro__title {
     box-sizing: border-box;
-    padding: 14px 0 0 6px;
     margin: 0;
     width: 160px;
 
@@ -107,14 +147,12 @@
     color: fade(#ffffff, 80%);
 
     &--medium-title {
-        padding: 10px 0 0 6px;
         font-size: 14px;
     }
     
     &--large-title {
-        padding: 10px 0 0 25px;
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     &--low {
@@ -124,24 +162,33 @@
 
 @media (min-width: @small) {
     .intro__title {
-        padding: 14px 0 0 10px;
-        width: 225px;
+        width: 235px;
         font-size: 26px;
     }
 
     .intro__title--medium-title {
-        padding: 14px 0 0 10px;
         font-size: 20px;
+    }
+
+    .intro__title--large-title {
+        font-size: 20px;
+        line-height: 22px;
     }
 }
 
 @media (min-width: @large) {
     .intro__title {
-        width: 320px;
+        width: 260px;        
+        font-size: 30px;
     }
 
     .intro__title--medium-title {
-        padding: 14px 0 0 15px;
+        width: 290px;
         font-size: 26px;
+    }
+
+    .intro__title--large-title {
+        font-size: 28px;
+        line-height: 30px;
     }
 }
