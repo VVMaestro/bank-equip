@@ -2,34 +2,43 @@
     display: block;
 
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 10px;
     margin-bottom: 40px;
-    min-height: 265px;
     width: 100%;
 
     color: #000000;
 
     border: 2px solid #e7e7e7;
-    background-image: linear-gradient(112deg, #fbb569 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
-    url(../img/stations.jpg);
-    background-position: 0 0, 0 -50px;
+    
     background-repeat: no-repeat;
-
+    background-size: auto,
+    auto 180px;
+    
     &:hover {
         color: #000000;
-        background-image: linear-gradient(112deg, #fba648 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
-        url(../img/stations.jpg);
+    }
+}
+
+.product-2--orange {
+    background-image: linear-gradient(105deg, #fbb569 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
+    url(../img/stations.jpg);
+    background-position: 0 0,
+    0 -35px;
+
+    &:hover {
+        background-image: linear-gradient(105deg, #fba648 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/stations.jpg);
     }
 }
 
 .product-2--reverse-green {
-    background-image: linear-gradient(-112deg, #85d2d2 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    background-image: linear-gradient(-105deg, #85d2d2 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
     url(../img/control.jpg);
     background-position: 0 0,
-    100% -50px;
+    right -10px top -10px;
 
     &:hover {
-        background-image: linear-gradient(-112deg, #6ac8c8 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        background-image: linear-gradient(-105deg, #6ac8c8 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
         url(../img/control.jpg);
     }
 
@@ -43,13 +52,13 @@
 }
 
 .product-2--reverse-violet {
-    background-image: linear-gradient(-112deg, #c7afd8 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    background-image: linear-gradient(-105deg, #c7afd8 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
         url(../img/communications.jpg);
     background-position: 0 0,
-        120% -90px;
+        right 0 top -30px;
 
     &:hover {
-        background-image: linear-gradient(-112deg, #bb9dd0 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        background-image: linear-gradient(-105deg, #bb9dd0 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
             url(../img/communications.jpg);
     }
 
@@ -63,28 +72,167 @@
 }
 
 .product-2--blue {
-    background-image: linear-gradient(112deg, #93c7ea 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    background-image: linear-gradient(105deg, #93c7ea 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
     url(../img/hight-volt-lines.jpg);
     background-position: 0 0,
-    0 -100px;
+    0px -50px;
+    background-size: auto,
+    auto 200px;
 
     &:hover {
         color: #000000;
-        background-image: linear-gradient(112deg, #7bbbe6 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        background-image: linear-gradient(105deg, #7bbbe6 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
             url(../img/hight-volt-lines.jpg);
     }
 }
 
 .product-2--yellow {
-    background-image: linear-gradient(112deg, #fbe374 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+    background-image: linear-gradient(105deg, #fbe374 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
         url(../img/rele.jpg);
     background-position: 0 0,
-        0 -60px;
+        0 -10px;
 
     &:hover {
         color: #000000;
-        background-image: linear-gradient(112deg, #fbdd55 8%, transparent 8.1%, transparent 42%, #ffffff 42.1%),
+        background-image: linear-gradient(105deg, #fbdd55 9%, transparent 9.1%, transparent 42%, #ffffff 42.1%),
             url(../img/rele.jpg);
+    }
+}
+
+@media (min-width: @medium) {
+    .product-2 {
+        padding: 0 20px;
+        background-size: auto, auto 320px;
+    }
+
+    .product-2--orange {
+        background-image: linear-gradient(105deg, #fbb569 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+            url(../img/stations.jpg);
+        background-position: 0 0,
+            -30px -10px;
+
+        &:hover {
+            background-image: linear-gradient(105deg, #fba648 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+                url(../img/stations.jpg);
+        }
+    }
+
+    .product-2--reverse-green {
+        background-image: linear-gradient(-105deg, #85d2d2 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+            url(../img/control.jpg);
+        background-position: 0 0,
+            right -130px top 0px;
+
+        &:hover {
+            background-image: linear-gradient(-105deg, #6ac8c8 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+                url(../img/control.jpg);
+        }
+    }
+
+    .product-2--reverse-violet {
+        background-image: linear-gradient(-105deg, #c7afd8 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+            url(../img/communications.jpg);
+        background-position: 0 0,
+            right -80px top 0px;
+
+        &:hover {
+            background-image: linear-gradient(-105deg, #bb9dd0 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+                url(../img/communications.jpg);
+        }
+    }
+
+    .product-2--blue {
+        background-image: linear-gradient(105deg, #93c7ea 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+            url(../img/hight-volt-lines.jpg);
+        background-position: 0 0,
+            -70px -10px;
+
+        &:hover {
+            color: #000000;
+            background-image: linear-gradient(105deg, #7bbbe6 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+                url(../img/hight-volt-lines.jpg);
+        }
+    }
+
+    .product-2--yellow {
+        background-image: linear-gradient(105deg, #fbe374 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+            url(../img/rele.jpg);
+        background-position: 0 0,
+            0 0;
+
+        &:hover {
+            color: #000000;
+            background-image: linear-gradient(105deg, #fbdd55 10%, transparent 10.1%, transparent 32%, #ffffff 32.1%),
+                url(../img/rele.jpg);
+        }
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .product-2 {
+        background-size: auto;
+    }
+
+    .product-2--orange {
+        background-image: linear-gradient(105deg, #fbb569 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/stations.jpg);
+        background-position: 0 0,
+            0 -50px;
+
+        &:hover {
+            background-image: linear-gradient(105deg, #fba648 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+                url(../img/stations.jpg);
+        }
+    }
+
+    .product-2--reverse-green {
+        background-image: linear-gradient(-105deg, #85d2d2 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/control.jpg);
+        background-position: 0 0,
+            100% -50px;
+
+        &:hover {
+            background-image: linear-gradient(-105deg, #6ac8c8 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+                url(../img/control.jpg);
+        }
+    }
+
+    .product-2--reverse-violet {
+        background-image: linear-gradient(-105deg, #c7afd8 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/communications.jpg);
+        background-position: 0 0,
+            120% -90px;
+
+        &:hover {
+            background-image: linear-gradient(-105deg, #bb9dd0 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+                url(../img/communications.jpg);
+        }
+    }
+
+    .product-2--blue {
+        background-image: linear-gradient(105deg, #93c7ea 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/hight-volt-lines.jpg);
+        background-position: 0 0,
+            0 -100px;
+
+        &:hover {
+            color: #000000;
+            background-image: linear-gradient(105deg, #7bbbe6 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+                url(../img/hight-volt-lines.jpg);
+        }
+    }
+
+    .product-2--yellow {
+        background-image: linear-gradient(105deg, #fbe374 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+            url(../img/rele.jpg);
+        background-position: 0 0,
+            0 -60px;
+
+        &:hover {
+            color: #000000;
+            background-image: linear-gradient(105deg, #fbdd55 6%, transparent 6.1%, transparent 42%, #ffffff 42.1%),
+                url(../img/rele.jpg);
+        }
     }
 }
 
@@ -93,21 +241,99 @@
     justify-content: flex-end;
     align-items: center;
 
-    min-height: 265px;
+    min-height: 112px;
+}
+
+@media (min-width: @medium) {
+    .product-2__columns {
+        min-height: 285px;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .product-2__columns {
+        min-height: 265px;
+    }
 }
 
 .product-2__description {
-    width: 640px;
+    width: 55%;
     text-align: right;
     font-weight: 400;
 }
 
+@media (min-width: @medium) {
+    .product-2__description {
+        width: 65%;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .product-2__description {
+        width: 600px;
+    }
+}
+
 .product-2__title {
-    margin-bottom: 15px;
-    font-size: 19px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media (min-width: @medium) {
+    .product-2__title {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .product-2__title {
+        margin-bottom: 15px;
+        font-size: 19px;
+    }
 }
 
 .product-2__text {
-    font-size: 16px;
+    display: none;
+
+    margin-bottom: 0;
+
+    font-size: 15px;
     line-height: 18px;
+}
+
+@media (min-width: @medium) {
+    .product-2__text {
+        display: block;
+    }
+}
+
+@media (min-width: @extraLarge) {
+    .product-2__text {
+        font-size: 16px;
+    }
+}
+
+.product-2__description-dublicate {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.product-2__title-dublicate {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;    
+    text-align: center;
+}
+
+.product-2__text-dublicate {
+    display: block;
+}
+
+@media (min-width: @medium) {
+    .product-2__description-dublicate {
+        display: none;
+    }
 }
